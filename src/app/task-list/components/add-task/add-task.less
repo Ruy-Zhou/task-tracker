@@ -1,0 +1,22 @@
+.form-control {
+    padding: 10px;
+
+    input {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+        width: 400px;
+    }
+
+    label {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+
+        &::after {
+            content: ': '
+        }
+
+        margin-right: 10px;
+    }
+}

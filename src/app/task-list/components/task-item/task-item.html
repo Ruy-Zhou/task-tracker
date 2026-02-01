@@ -1,0 +1,5 @@
+<div [class]="['task-item', task?.reminder ? 'is-reminder' : '']" (dblclick)="toggleReminder(task)">
+    <h3>{{ task?.text }}</h3>
+    <p>{{ task?.date }}</p>
+    <span class="remove-btn" (click)="removeTask(task)">X</span>
+</div>
