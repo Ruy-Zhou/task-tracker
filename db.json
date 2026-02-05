@@ -67,7 +67,7 @@
       "reminder": true
     }
   ],
-  "checkboxs": [
+  "treeItems": [
     { "id": 1, "label": "test1", "children": [
       { "id": 5, "label": "test5" },
       { "id": 6, "label": "test6" },

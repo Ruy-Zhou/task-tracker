@@ -1,0 +1,14 @@
+<div class="tree-container">
+  @for(item of treeItems(); track item.id) {
+    <div class="node">
+      <input type="checkbox" [class]="['parent', getParentCheck(item.id)]" [id]="item.id" (click)="clickParent(item.id)" />
+      <label [for]="item.id">{{item.label}}</label>
+      @for(child of item.children; track child.id) {
+        <div class="node-items">
+          <input type="checkbox" [checked]="getItemCheck(child.id)" [id]="child.id" (click)="toggleCheck(child.id)" />
+          <label [for]="child.id">{{child.label}}</label>
+        </div>
+      }
+    </div>
+  }
+</div>
